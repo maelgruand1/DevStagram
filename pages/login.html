@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devstagram | Connexion & Inscription</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 class="title">Devstagram</h1>
+    </header>
+    <main class="auth-container">
+        <div id="login-section" class="auth-section">
+            <h2>Connexion</h2>
+            <form id="login-form">
+                <label for="login-username">Nom d'utilisateur :</label>
+                <input type="text" id="login-username" placeholder="Votre nom d'utilisateur" required>
+                
+                <label for="login-password">Mot de passe :</label>
+                <input type="password" id="login-password" placeholder="Votre mot de passe" required>
+                
+                <button type="submit">Se connecter</button>
+            </form>
+            <button id="switch-to-signup" class="switch-button">Créer un compte</button>
+        </div>
+
+        <div id="signup-section" class="auth-section hidden">
+            <h2>Inscription</h2>
+            <form id="signup-form">
+                <label for="signup-username">Nom d'utilisateur :</label>
+                <input type="text" id="signup-username" placeholder="Choisissez un nom d'utilisateur" required>
+                
+                <label for="signup-password">Mot de passe :</label>
+                <input type="password" id="signup-password" placeholder="Choisissez un mot de passe" required>
+                
+                <label for="signup-confirm-password">Confirmez le mot de passe :</label>
+                <input type="password" id="signup-confirm-password" placeholder="Confirmez votre mot de passe" required>
+                
+                <button type="submit">S'inscrire</button>
+            </form>
+            <button id="switch-to-login" class="switch-button">Déjà un compte ?</button>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
